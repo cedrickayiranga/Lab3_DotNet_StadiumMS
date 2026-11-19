@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>StadiumMS</RootNamespace>
+    <AssemblyName>StadiumMS</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.3.7" />
+  </ItemGroup>
+
+  <!-- These lines make each form show up as ONE item (Form + Designer + resx) in Solution Explorer -->
+  <ItemGroup>
+    <Compile Update="Views\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\CustomerDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CustomerDashboardForm.Designer.cs">
+      <DependentUpon>CustomerDashboardForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\CustomerDashboardForm.resx">
+      <DependentUpon>CustomerDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\CustomerViewEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CustomerViewEvents.Designer.cs">
+      <DependentUpon>CustomerViewEvents.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\CustomerViewEvents.resx">
+      <DependentUpon>CustomerViewEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\CustomerBuyTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CustomerBuyTicket.Designer.cs">
+      <DependentUpon>CustomerBuyTicket.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\CustomerBuyTicket.resx">
+      <DependentUpon>CustomerBuyTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\CustomerMyTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CustomerMyTickets.Designer.cs">
+      <DependentUpon>CustomerMyTickets.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\CustomerMyTickets.resx">
+      <DependentUpon>CustomerMyTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\AdminDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\AdminDashboardForm.Designer.cs">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\AdminDashboardForm.resx">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
